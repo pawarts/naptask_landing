@@ -1,0 +1,36 @@
+#service .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#service .cards .service-item:last-child {
+    margin-right: 50px;
+}
+
+
+
+.service-item:first-child {
+    margin-top: 63px;
+}
+
+.service-item:not(:first-child) {
+    margin-top: 40px;
+}
+
+.feature_block-icon {
+    margin-right: 10px;
+}
+
+
+
+@media(max-width: 810px) {
+    #service .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #service .cards .service-item:last-child {
+        margin-right: 0;
+    }
+}

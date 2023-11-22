@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 175px 0 0;
+}
+
+.header .burger_menu-link_list {
+    display: flex;
+}
+
+.burger_menu-link {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 45px;
+
+}
+
+.burger_menu-link::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 2px;
+    width: 0;
+    background: #000;
+
+    transition: .5s;
+}
+
+.burger_menu-link:hover::after {
+    width: 100%;
+}

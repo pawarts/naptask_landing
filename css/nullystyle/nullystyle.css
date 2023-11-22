@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding-left: 50px;
+}
+
+
+section {
+    min-height: 100vh;
+    /*border: 1px solid;*/
+}
+
+#main,
+#contact {
+    height: auto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+ul,
+li {
+    list-style: none;
+}

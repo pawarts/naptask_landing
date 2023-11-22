@@ -1,0 +1,125 @@
+#price {
+    margin-left: 0;
+    margin-bottom: 60px;
+}
+
+#price .screen_title {
+    margin-left: 20px;
+}
+
+.price_card-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.price_card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 300px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background: #fff;
+    margin-right: 94px;
+    margin-bottom: 15px;
+}
+
+.price_card-item[class~="price_card-accent"] {
+    background: #000;
+}
+
+.price_card-item[class~="price_card-accent"] .feature_text,
+.price_card-item[class~="price_card-accent"] .card_title_text {
+    color: #fff;
+}
+
+.price_card-item button {
+    padding: 6px 35px;
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.price_card-item[class~="price_card-accent"] button {
+    color: #fff;
+    border-color: #fff;
+}
+
+.price_card-item .price_features {
+    text-align: center;
+    filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.25));
+}
+
+@media(max-width: 810px) {
+    .price_card-item {
+        margin-left: 30px;
+    }
+
+    price_card-item:last-child {
+        margin-right: 0;
+    }
+}
+
+
+@media(max-width: 480px) {
+
+    .price_card-selector {
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+    }
+
+    .price_card-selector div {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: inline-flex;
+    }
+
+    .price_selector {
+        width: 11px;
+        height: 11px;
+        background: #ddd;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .price_selector_active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 11px;
+        height: 11px;
+        background: #000;
+        border-radius: 50%;
+        transition: .5s;
+    }
+
+    .price_card-mobile {
+        min-width: calc(100vw);
+
+        display: flex;
+        justify-content: center;
+
+        padding-bottom: 15px;
+    }
+
+    .price_card-items {
+        justify-content: start;
+    }
+
+    .price_card-item {
+        margin-right: 0;
+    }
+
+    #cards {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        transition: .5s;
+    }
+}

@@ -1,0 +1,35 @@
+button[class~="feature_text"] {
+    padding: 9px 37px;
+    background: #000;
+    color: #ffff;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen_image {
+    width: 490px;
+    height: 497px;
+    margin-left: 245px;
+}
+
+
+@media(max-width: 810px) {
+    .screen_image {
+        width: 384px;
+        height: 390px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #main {
+        flex-direction: column;
+    }
+}
